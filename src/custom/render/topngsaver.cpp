@@ -46,7 +46,7 @@ namespace custom::render
         const auto width{x_max - x_min + 1};
         const auto height{y_max - y_min + 1};
 
-        // image in XYZ colour space, pinch black by default
+        // image in XYZ colour space, pitch black by default
         std::vector< std::vector <Vector> > image_XYZ (width, std::vector <Vector>(height, {0.0, 0.0, 0.0} ) );
 
         const std::size_t spectrum_table_size{XYZ_m.at("X").table_size()};

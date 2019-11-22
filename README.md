@@ -12,7 +12,21 @@ Rendered cornell box-like scene. Used settings: 1000 samples per pixel, recursio
 
   **This project is focused on the implementation of the renderer, capable of processing spectral representation of light, physically-based material properties and simulation of dispersion effect.**
   
-  
+# Features
+- **Path tracing implementation** – ray gathering variety to be more precise - (not to confuse with much simplified ray tracing approach).
+
+- **BRDF is built-in** - to proper simulate light reflections and scattering.
+
+- **Importance sampling** - allows for the more efficient rendering. 
+
+- **Real materials can be added easily** - just pick their spectral data from the labs (e. g. light sources from CIE, reflectors from NASA’s free collection).
+
+- **Modular approach** - allows for customization and extensibility – source code is separated into two parts: core (framework with basic utilities and declared interfaces) and custom (modules, which provide different implementations for the interfaces).
+
+- **Documentation is available** – UML class/package diagrams are provided, check them out to learn more about architecture of the program and extensibility options.
+
+- **Written in C++17 using only STL** – designed to rely on CPU only, it is free from unnecessary dependencies.
+
 
 
  

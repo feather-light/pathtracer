@@ -11,7 +11,7 @@ namespace custom::render
                                                     int depth) const
     {
 
-        //pinch black as we yet to obtain light
+        //pitch black as we yet to obtain light
         core::optics::Spectrum sp { {0.0, 0.0}, spectrum_table_size};
 
         auto surface_data{ scene.probe_surface_data(initial_ray) };

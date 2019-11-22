@@ -27,6 +27,18 @@ Rendered cornell box-like scene. Used settings: 1000 samples per pixel, recursio
 
 - **Written in C++17 using only STL** – designed to rely on CPU only, it is free from unnecessary dependencies.
 
+# Modular design usage example: path tracers
+Different implementations of path tracer can be swapped without changing any other module in the system.
+
+![pathtracers](https://github.com/feather-light/pathtracer/blob/master/docs/output_examples/pathtracers.png)
+
+**Preview** one is used to check appearance of objects in terms of colour and perspective only.
+
+**Depth** one might be useful to check composition details of the scene in terms of volume (which preview one is lacking).
+
+**Reflection** one is designed to be a proper physically-based path tracer, it requires much more processing power, but produces a decent final image. 
+
+
 
 
  

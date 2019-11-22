@@ -13,7 +13,7 @@ namespace custom::render
                                                   int depth) const
     {
 
-        //pinch black as we yet to obtain light
+        // pitch black as we yet to obtain light
         core::optics::Spectrum sp { {0.0, 0.0}, spectrum_table_size};
 
         auto intersection { scene.ray_intersection(initial_ray) };

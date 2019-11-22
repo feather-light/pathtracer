@@ -16,7 +16,7 @@ namespace custom::render
                                                        int samples,
                                                        int depth) const
     {
-        //pinch black as we yet to obtain light
+        // pitch black as we yet to obtain light
         core::optics::Spectrum sp { {0.0, 0.0}, spectrum_table_size};
 
         // recursion stop point + avoiding negative input

@@ -54,19 +54,19 @@ It is obvious, that importance sampling strategy allows for the huge quality imp
 # Tools used in development of this project
 - **[Arch Linux](https://wiki.archlinux.org/index.php/Arch_Linux)** – program was written, compiled and tested under Arch.
 
-- **juCi++** – excellent lightweight C++ IDE with support for C++17 features, uses Clang and Cmake. 
+- **[juCi++](https://gitlab.com/cppit/jucipp)** – excellent lightweight C++ IDE with support for C++17 features, uses Clang and Cmake. 
 
-- **UMLet** – very nice and simple tool to create UML diagrams via markup.
+- **[UMLet](https://www.umlet.com/)** – very nice and simple tool to create UML diagrams via markup.
 
-- **DevDocs** – documentation aggregator, allowing for the easy API search, has both web and standalone version.
+- **[DevDocs](https://devdocs.io/)** – documentation aggregator, allowing for the easy API search, has both web and standalone version.
 
-- **PNGwriter** – easy-to-use C++ library to work with .png files.
+- **[PNGwriter](https://github.com/pngwriter/pngwriter)** – easy-to-use C++ library to work with .png files.
  
 # Some ideas about possible further improvements
 
 - Implementation of parallel processing support via OpenMP.
 
-- ISaver implementation with support of intensity correction.
+- IImageSaver implementation with support of intensity correction.
 
 - IRaytraceable scene compositor which uses space partitioning algorithm to speedup ray intersection computations.
 

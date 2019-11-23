@@ -51,6 +51,15 @@ Sampler is responsible for the generating a direction of the next traced ray. Be
 Above is comparison of two samplers applied to the same scene using same path tracer and other modules. Different amount of samples per pixel presented to demonstrate how quality changes to show efficiency of each sampler. Note that importance sampler allows for the reflections even with the smallest amount of samples, whereas pure random one is struggling with soft shadows and only tiny amount of reflection is visible when number of samples is 64, which cause metallic sphere to be almost invisible. 
 It is obvious, that importance sampling strategy allows for the huge quality improvement using same computational resources.
 
+# Tools used in development of this project:
+- **Arch Linux** – program was written, compiled and tested under Arch OS.
 
+- **juCi++** – excellent lightweight C++ IDE with support for C++17 features, uses Clang and Cmake. 
+
+- **UMLet** – very nice and simple tool to create UML diagrams via markup.
+
+- **DevDocs** – documentation aggregator, allowing for the easy API search, has both web and standalone version.
+
+- **PNGwriter** – easy-to-use C++ library to work with .png files.
  
 

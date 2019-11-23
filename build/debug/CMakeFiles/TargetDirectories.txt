@@ -1,3 +1,0 @@
-/home/konstantin/mycode/pathtracer/build/debug/CMakeFiles/rebuild_cache.dir
-/home/konstantin/mycode/pathtracer/build/debug/CMakeFiles/pathtracer.dir
-/home/konstantin/mycode/pathtracer/build/debug/CMakeFiles/edit_cache.dir

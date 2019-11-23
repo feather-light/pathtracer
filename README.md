@@ -13,17 +13,17 @@ Rendered [cornell box](https://en.wikipedia.org/wiki/Cornell_box)-like scene. Us
   **This project is focused on the implementation of the renderer, capable of processing spectral representation of light, physically-based material properties and simulation of dispersion effect.**
   
 # Features
-- **Path tracing implementation** – ray gathering variety to be more precise - (not to confuse with much simplified ray tracing approach).
+- **[Path tracing](https://en.wikipedia.org/wiki/Path_tracing) implementation** – ray gathering variety to be more precise - (not to confuse with much simplified ray tracing approach).
 
-- **BRDF is built-in** - to proper simulate light reflections and scattering.
+- **[BRDF](https://en.wikipedia.org/wiki/Bidirectional_reflectance_distribution_function) is built-in** - to proper simulate light reflections and scattering.
 
-- **Importance sampling** - allows for the more efficient rendering. 
+- **[Importance sampling](http://www.pbr-book.org/3ed-2018/Monte_Carlo_Integration/Importance_Sampling.html) implementation** - allows for the more efficient rendering. 
 
-- **Real materials can be added easily** - just pick their spectral data from the labs (e. g. light sources from CIE, reflectors from NASA’s free collection).
+- **Real materials can be added easily** - just pick their spectral data from the labs (e. g. light sources from [CIE](https://en.wikipedia.org/wiki/International_Commission_on_Illumination), reflectors from [NASA’s free collection](https://speclib.jpl.nasa.gov/)).
 
 - **Modular approach** - allows for customization and extensibility – source code is separated into two parts: core (framework with basic utilities and declared interfaces) and custom (modules, which provide different implementations for the interfaces).
 
-- **Documentation is available** – UML class/package diagrams are provided, check them out to learn more about architecture of the program and extensibility options.
+- **Documentation is available** – [UML class/package diagrams are provided](https://github.com/feather-light/pathtracer/blob/master/docs/uml_diagrams/Pathtracer_UML.pdf), check them out to learn more about architecture of the program and extensibility options.
 
 - **Written in C++17 using only STL** – designed to rely on CPU only, it is free from unnecessary dependencies.
 

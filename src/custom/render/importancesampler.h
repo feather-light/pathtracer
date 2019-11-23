@@ -1,7 +1,7 @@
 /*
  * ImportanceSampler is based around BRDF importance diagram.
  * It allows to render more efficiently by choosing sample that
- * impacts more value with a grater probability.
+ * impacts more value with a greater probability.
  * Example given - if we would make samples for the ideal mirror, there is only
  * one direction to sample, really.
  * Another one is lambertian scatter - there is no reason to sample near

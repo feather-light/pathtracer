@@ -52,7 +52,7 @@ Above is comparison of two samplers applied to the same scene using same path tr
 It is obvious, that importance sampling strategy allows for the huge quality improvement using same computational resources.
 
 # Tools used in development of this project
-- **Arch Linux** – program was written, compiled and tested under Arch OS.
+- **[Arch Linux](https://wiki.archlinux.org/index.php/Arch_Linux)** – program was written, compiled and tested under Arch.
 
 - **juCi++** – excellent lightweight C++ IDE with support for C++17 features, uses Clang and Cmake. 
 

@@ -3,7 +3,7 @@ Physically-based spectral CPU-only renderer written in C++17 using bare STL.
 
 ![cornell_box](https://github.com/feather-light/pathtracer/blob/master/docs/output_examples/cornell_box.png)
 
-Rendered cornell box-like scene. Used settings: 1000 samples per pixel, recursion depth is 5, spectrum is approximated by 32 points. Note soft shadows and different reflective properties of objects. 
+Rendered [cornell box](https://en.wikipedia.org/wiki/Cornell_box)-like scene. Used settings: 1000 samples per pixel, recursion depth is 5, spectrum is approximated by 32 points. Note soft shadows and different reflective properties of objects. 
 
 # About
   With growth of computational power modern rendering systems development tend to focus on implementation of physically-based approaches. That is because such techniques allow artists to shift their effort from by-hand shader modifications to the overall scene composition adjustment and increasing level of details. Instead of tweaking model's textures and baking fake light across the scene, it is now preferable to pick up a light source and material's properties from the collections of real world data.

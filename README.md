@@ -62,4 +62,20 @@ It is obvious, that importance sampling strategy allows for the huge quality imp
 
 - **PNGwriter** – easy-to-use C++ library to work with .png files.
  
+# Some ideas about possible further improvements
 
+- Implementation of parallel processing support via OpenMP.
+
+- ISaver implementation with support of intensity correction.
+
+- IRaytraceable scene compositor which uses space partitioning algorithm to speedup ray intersection computations.
+
+- Serialization/deserialization of objects.
+
+- Support for the meshes and loading of external .obj files.
+
+- Addition of textures support.
+
+- Modifications to implement bidirectional path tracing.
+
+# Project author: Bondarenko Konstantin, V. N. Karazin Kharkiv National University, Kharkiv, Ukraine, 2019.

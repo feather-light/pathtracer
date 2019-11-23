@@ -68,7 +68,7 @@ It is obvious, that importance sampling strategy allows for the huge quality imp
 
 - IImageSaver implementation with support of intensity correction.
 
-- IRaytraceable scene compositor which uses space partitioning algorithm to speedup ray intersection computations.
+- IRaytraceable scene compositor which uses space partitioning algorithm to speed-up ray intersection computations.
 
 - Serialization/deserialization of objects.
 

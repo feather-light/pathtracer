@@ -38,7 +38,16 @@ Different implementations of path tracer can be swapped without changing any oth
 
 **Reflection** one is designed to be a proper physically-based path tracer, it requires much more processing power, but produces a decent final image. 
 
+# Modular design usage example: samplers
+Different implementations of sampler can be swapped without changing any other module in the system.
+Sampler is responsible for the generating a direction of the next traced ray. Below is comparison of two realizations of samplers.
+Pure random one – generates random direction uniformly in hemisphere defined by normal to the surface. It is the most naive way to go.  
+Importance sampler is based around BRDF importance diagram. It allows to render more efficiently by choosing sample that impacts more with a greater probability. For example, if we would make samples for the ideal mirror surface, there is really only one direction to sample. Another one is lambertian scatter - there is no reason to sample near pi/2 at all.
 
+![samplers](https://github.com/feather-light/pathtracer/blob/master/docs/output_examples/samplers.png)
+
+Above is comparison of two samplers applied to the same scene using same path tracer and other modules. Different amount of samples per pixel presented to demonstrate how quality changes to show efficiency of each sampler. Note that importance sampler allows for the reflections even with the smallest amount of samples, whereas pure random one is struggling with soft shadows and only tiny amount of reflection is visible when number of samples is 64, which cause metallic sphere to be almost invisible. 
+It is obvious, that importance sampling strategy allows for the huge quality improvement using same computational resources.
 
 
  

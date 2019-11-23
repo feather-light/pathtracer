@@ -41,8 +41,10 @@ Different implementations of path tracer can be swapped without changing any oth
 # Modular design usage example: samplers
 Different implementations of sampler can be swapped without changing any other module in the system.
 Sampler is responsible for the generating a direction of the next traced ray. Below is comparison of two realizations of samplers.
-Pure random one – generates random direction uniformly in hemisphere defined by normal to the surface. It is the most naive way to go.  
-Importance sampler is based around BRDF importance diagram. It allows to render more efficiently by choosing sample that impacts more with a greater probability. For example, if we would make samples for the ideal mirror surface, there is really only one direction to sample. Another one is lambertian scatter - there is no reason to sample near pi/2 at all.
+
+**Pure random one** – generates random direction uniformly in hemisphere defined by normal to the surface. It is the most naive way to go.  
+
+**Importance sampler** is based around BRDF importance diagram. It allows to render more efficiently by choosing sample that impacts more with a greater probability. For example, if we would make samples for the ideal mirror surface, there is really only one direction to sample. Another one is lambertian scatter - there is no reason to sample near pi/2 at all.
 
 ![samplers](https://github.com/feather-light/pathtracer/blob/master/docs/output_examples/samplers.png)
 

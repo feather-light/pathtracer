@@ -17,6 +17,8 @@ namespace core::render
     class IImageTile
     {
     public:
+        virtual ~IImageTile(){};
+
         virtual std::optional<std::pair <int, int>> next_pixel() const = 0;
         virtual void reset() = 0;
         virtual std::optional<core::optics::Spectrum> pixel(int x, int y) const = 0;

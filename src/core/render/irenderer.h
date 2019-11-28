@@ -17,6 +17,8 @@ namespace core::render
     class IRenderer
     {
     public:
+        virtual ~IRenderer(){};
+
         virtual void process(const core::render::IPathtracer& pathtracer,
                              const core::render::IRaytraceable& scene,
                              const core::render::IViewport& viewport,

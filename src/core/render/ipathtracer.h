@@ -20,6 +20,8 @@ namespace core::render
     class IPathtracer
     {
     public:
+        virtual ~IPathtracer(){};
+
         virtual core::optics::Spectrum trace(const core::render::IRaytraceable& scene,
                                              const std::optional<const std::reference_wrapper<const core::render::IRaytraceable> > current,
                                              const core::geometry::Ray& initial_ray,

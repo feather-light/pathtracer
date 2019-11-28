@@ -13,6 +13,8 @@ namespace core::render
     class IViewport
     {
     public:
+        virtual ~IViewport(){};
+        
         virtual std::optional<core::geometry::Ray> cast_ray(int x, int y) const = 0;
     };
 }

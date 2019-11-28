@@ -16,6 +16,8 @@ namespace core::render
     class IRaytraceable
     {
     public:
+        virtual ~IRaytraceable(){};
+
         virtual std::optional< std::tuple<core::geometry::Point,
                                           const core::render::IRaytraceable& > > ray_intersection(const core::geometry::Ray& r) const = 0;
 

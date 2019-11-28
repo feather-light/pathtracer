@@ -16,6 +16,8 @@ namespace core::render
     class IImageSaver
     {
     public:
+        virtual ~IImageSaver(){};
+
         virtual void save (const core::render::IImageTile& image, std::string filename) const = 0;
     };
 }
